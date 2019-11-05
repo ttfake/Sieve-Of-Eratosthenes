@@ -67,7 +67,7 @@ markPrimesOuterLoop:
 
 markPrimesInnerLoop:
             add       r13,r15
-            mov       QWORD [numbers + r13 * sizeOfInt],r11
+            mov       DWORD [numbers + r13 * sizeOfInt],r11d
             sub       rcx,r15
             cmp       rcx,0
             jg        markPrimesInnerLoop
