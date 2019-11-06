@@ -5,8 +5,8 @@
     nmbfmt  db "%u"
     sizeOfInt      equ        4
 [SECTION .bss]
-    number         resb       4096
-    numbers        resd       10000
+    number         resb       100000000
+    numbers        resd       100000000
     offset         equ        2
 [SECTION .text]
 ;[SECTION .rodata]
@@ -80,10 +80,10 @@ printPrimes:
             mov       rcx,[number]                              ; Setup new read loop
             dec       rcx
             mov       [number],rcx
+            xor       rsi,rsi    
             mov       rsi,[numbers + r13 * sizeOfInt]           ; Move number to rsi for printf
 ;            cmp       rsi,0
 ;            jnz       clean
-;            cmp       rsi,0
 ;            je        compareIndex
              jmp       clean
 
