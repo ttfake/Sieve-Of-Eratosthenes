@@ -9,3 +9,5 @@ To-Do
 -- Gracefully handle numbers that are less than or equal to 2.<br/>
 -- Dynamically allocate numbers array.<br/>
 -- Only print prime numbers, ignoring the 0 marks.<br/>
+-- Fix comments.<br\>
+-- Finish Commenting.<br\>
